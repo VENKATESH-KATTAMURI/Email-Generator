@@ -27,7 +27,7 @@ Department (choose from menu)
 
 The system will:
 
-Generate an email ID in the format: firstname+lastname.department@drngpit.ac.in
+Generate an email ID in the format: firstname+lastname.department@gmail.com
 
 Generate a random password (8 characters)
 
