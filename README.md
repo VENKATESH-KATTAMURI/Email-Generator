@@ -1,6 +1,7 @@
 # Email-Generator
 Project Overview
 The Email Generator is a simple Java console-based application that helps organizations create and manage employee email accounts.
+
 It automates:
 
 Generating professional email IDs based on user input
@@ -33,14 +34,22 @@ Generate a random password (8 characters)
 
 Generate a random verification code (used for secure operations)
 
-🛠 Available Operations:
+----Available Operations:
+
 Option	Description
+
 1	View employee information
+
 2	Change email address
+
 3	Change password (requires verification code)
+
 4	View current password (requires verification code)
+
 5	Exit the program
-Key Features:
+
+
+----Key Features:
  Secure Password Generation
 
  Verification Code for Password Management
