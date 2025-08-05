@@ -1,5 +1,5 @@
 # Email-Generator
-Project Overview
+Project Overview:  
 The Email Generator is a simple Java console-based application that helps organizations create and manage employee email accounts.
 
 It automates:
@@ -17,6 +17,7 @@ Viewing & updating employee information
 This project is designed to demonstrate OOP concepts like Encapsulation, User Interaction, and Security Basics.
 
 Usage Guidelines
+
 ---- When you run the program:
 You will be prompted to enter:
 
