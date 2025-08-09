@@ -1,62 +1,96 @@
-# Email-Generator Project using Java
-Project Overview:  
-The Email Generator is a simple Java console-based application that helps organizations create and manage employee email accounts.
+## Email-Generator - Java Console Application
 
-It automates:
+### Overview
 
-Generating professional email IDs based on user input
+**Email-Generator** is a Java console application that helps organizations automate the creation and management of employee email accounts. It demonstrates core object-oriented programming concepts such as encapsulation, user interaction, and basic security.
 
-Setting up random secure passwords
+### Key Features
 
-Department-based email generation
+* Automatically generates professional email IDs in the format: `firstname.lastname@department.com`
+* Creates secure random passwords (8 characters long)
+* Generates verification codes for secure password-related operations
+* Supports department-based email sorting
+* Offers a user-friendly, menu-driven console interface
+* Fully extendable and modular OOP codebase ([GitHub][1])
 
-Password management with verification code
+### Usage Guide
 
-Viewing & updating employee information
+1. **Launch the application.**
 
-This project is designed to demonstrate OOP concepts like Encapsulation, User Interaction, and Security Basics.
+2. **Provide required inputs:**
 
-Usage Guidelines
+   * First Name
+   * Last Name
+   * Department (choose from menu)
 
----- When you run the program:
-You will be prompted to enter:
+3. **Application outputs:**
 
-First Name
+   * Email ID (`firstname.lastname@department.com`)
+   * Randomly generated, secure password
+   * Verification code for password-related operations
 
-Last Name
+4. **Menu Options:**
 
-Department (choose from menu)
+   | Option | Action                                             |
+   | ------ | -------------------------------------------------- |
+   | 1      | View employee information                          |
+   | 2      | Change email address                               |
+   | 3      | Change password (requires verification code)       |
+   | 4      | View current password (requires verification code) |
+   | 5      | Exit the program                                   |
 
-The system will:
+### Installation & Setup
 
-Generate an email ID in the format: firstname+lastname.department@gmail.com
+1. Clone this repository:
 
-Generate a random password (8 characters)
+   ```bash
+   git clone https://github.com/VENKATESH-KATTAMURI/Email-Generator.git
+   ```
+2. Navigate into the project folder:
 
-Generate a random verification code (used for secure operations)
+   ```bash
+   cd Email-Generator
+   ```
+3. Compile the source files:
 
-----Available Operations:
+   ```bash
+   javac *.java
+   ```
+4. Run the application:
 
-Option	Description
+   ```bash
+   java EmailApp
+   ```
 
-1	View employee information
+### Code Structure
 
-2	Change email address
+* `Email.java` — Defines the `Email` class, encapsulating fields like email ID, password, and verification code.
+* `EmailApp.java` — Contains the `main()` method, handles user interaction, and ties together core functionalities like generating credentials, handling departments, and managing user commands.
 
-3	Change password (requires verification code)
+### How It Works
 
-4	View current password (requires verification code)
+* Inputs (first name, last name, department) drive email ID creation.
+* Passwords and verification codes are randomly generated using secure logic.
+* Verification codes are required to view or change personal credentials.
+* OOP principles ensure modularity and scalability for future enhancements.
 
-5	Exit the program
+### Future Enhancements
+
+* Integrate persistence (e.g., files or database) to save employee details.
+* Add email validation before creation.
+* Allow password length customization and enforce complexity rules.
+* Build a GUI for better user interaction and usability.
+* Enable SMTP integration for sending generated credentials over email.
+
+### Contributing
+
+Contributions are welcome! If you'd like to enhance this project, feel free to:
+
+* Fork the repository
+* Create a feature branch (`git checkout -b feature/YourFeature`)
+* Commit your changes (`git commit -m 'Add new feature'`)
+* Push to your branch (`git push origin feature/YourFeature`)
+* Open a Pull Request
 
 
-----Key Features:
- Secure Password Generation
-
- Verification Code for Password Management
-
- Department-based Email Addressing
-
- Simple Console-based Menu System
-
- Easily Extendable Codebase with OOP
+[1]: https://github.com/VENKATESH-KATTAMURI/Email-Generator "GitHub - VENKATESH-KATTAMURI/Email-Generator"
